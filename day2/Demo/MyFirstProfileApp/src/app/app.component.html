@@ -1,0 +1,19 @@
+<div id="contrainer">
+  <h1>My Profile</h1>
+  <img src={{person.avatar}}>
+  <h2>{{person.firstname}} {{person.lastname}}</h2>
+  <h2>Age: {{person.age}}</h2>
+  <h2>Adress: </h2>
+  <ul>
+    <li>Street: {{person.adress.street}}</li>
+    <li>City: {{person.adress.city}}</li>
+    <li>Country: {{person.adress.country}}</li>
+  </ul>
+  <h2>Friends</h2>
+  <ul>
+    <li *ngFor=" let friend of person.friends">
+     Name: {{friend.name}}, Age: {{friend.age}}
+    </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
