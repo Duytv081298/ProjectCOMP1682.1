@@ -1,0 +1,5 @@
+<button (click)=clicked()>Click</button>
+<!-- <input type="text" (keyup.enter)=showText($event) /> -->
+
+<input type="text" [(ngModel)]="mytext" name="text" (keyup.enter)=showText($event) />
+<h1>{{mytext}}</h1>
